@@ -1,0 +1,39 @@
+.navbar{
+    width: 100%;
+    background-color: rgb(158, 54, 193);
+    text-align: center;
+}
+.navbar div:first-child{
+    color: white;
+    padding-block: 1rem;
+    font-size: 1.5rem;
+}
+.navbar .add-todo h1{
+    color:white;
+    font-size: 3rem;
+    margin-block : 2rem
+}
+.navbar .add-todo .add-todo-form{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.navbar .add-todo .add-todo-form input{
+    width: 200px;
+    font-size: 1.5rem;
+    padding-inline: .5rem;
+    border-radius: .5rem;
+    padding-block : 0.25rem
+}
+.navbar .add-todo .add-todo-form .add-todo-button{
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: .5rem;
+    background-color: rgb(98, 1, 253);
+}
+.navbar .add-todo .add-todo-form .add-todo-button:hover{
+    background-color: rgb(77, 0, 200);
+    transition: 0.3s;
+}
