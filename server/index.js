@@ -4,7 +4,7 @@ import cors from "cors"
 import bodyParser from "body-parser";
 import { logger } from "./middleware/logger.js";
 const app = express();
-const port = 3000;
+const port = 4000;
 
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:false}))

@@ -39,9 +39,6 @@ function getTodoRouteCtl(req,res){
     } else {
         res.status(404).json({
             status:404,
-            todosLength:0,
-            activeTodosLength:0,
-            workingTodosLength:0,
             message:`There is no todo on database!Please first enter a todo!`
         })
     }

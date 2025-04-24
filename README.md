@@ -29,7 +29,7 @@ Because it is a simple project, we did not use database to save data, so there i
 You can even just copy the server and write your own front-end and if you have knowledge about [nodejs](https://nodejs.org/en) and [expressjs](https://expressjs.com/) you develop is easily.
 
 # I sample Image
-Sorry but unfortunately the sample image of it is not online and it is on my server but I will put a sample image an public folder.
+![sample image](./public/Sample-image.png)
 
 # conclusion
 This simple todo project is a awesome way to test your skills.

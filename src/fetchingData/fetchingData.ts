@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
+import { useQuery, UseQueryResult } from "@tanstack/react-query";
 const baseUrl = import.meta.env.VITE_SERVER_URL;
 axios.defaults.baseURL = baseUrl;
 
@@ -25,9 +26,15 @@ export async function postTodo(todo:string) {
         }
     }
 }
-export async function getTodos(){
+export function getTodos() {
     try{
-        return (await axios.get('todos')).data
+        const queryKey = ['todos'];
+        const queryFn = () => axios.get('todos').then((res)=>res.data)
+        const result : UseQueryResult = useQuery({
+            queryKey,
+            queryFn,
+        });
+        return result
     } catch(error:any){
         return error.response.data
     }
